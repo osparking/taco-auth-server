@@ -25,4 +25,9 @@ public class ProjectSecurityConfig {
     UserDetailsService userDetailsService(UserRepository userRepo) {
         return username -> userRepo.findByUsername(username);
     }
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+    }
 }
