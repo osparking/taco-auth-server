@@ -1,11 +1,11 @@
 package com.bumsoap.taco_auth_server.config;
 
+import com.bumsoap.taco_auth_server.data.UserRepository;
+import com.bumsoap.taco_auth_server.entity.TacoUser;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import tacos.data.UserRepository;
-import tacos.entity.TacoUser;
 
 @Configuration
 public class TestBeans {
